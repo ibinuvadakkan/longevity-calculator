@@ -9,7 +9,96 @@
 </head>
 <body>
   <div class="longevity-calculator-container">
-      <!-- Paste your calculator HTML here (from your snippet) -->
+    <div class="longevity-calculator">
+      <div class="calculator-header">
+        <h2>Life Expectancy Estimator</h2>
+        <p class="subtitle">Discover how Blue Zone habits could extend your lifespan</p>
+      </div>
+      
+      <div class="calculator-body">
+        <div class="form-group">
+          <label for="currentAge">Your Current Age</label>
+          <input type="number" id="currentAge" min="18" max="100" value="40" placeholder="Enter your age">
+        </div>
+        
+        <div class="form-group">
+          <label>Select Longevity Habits You'll Adopt:</label>
+          <div class="habits-grid">
+            <div class="habit-item">
+              <input type="checkbox" class="habit-checkbox" id="habit-1" data-years="2.0">
+              <div class="habit-info">
+                <div class="habit-name">Walk daily for errands</div>
+                <div class="habit-impact">+2.0 years • Natural movement throughout the day</div>
+              </div>
+            </div>
+            <div class="habit-item">
+              <input type="checkbox" class="habit-checkbox" id="habit-2" data-years="1.5">
+              <div class="habit-info">
+                <div class="habit-name">Eat beans 4x/week</div>
+                <div class="habit-impact">+1.5 years • Plant-based protein for heart health</div>
+              </div>
+            </div>
+            <div class="habit-item">
+              <input type="checkbox" class="habit-checkbox" id="habit-3" data-years="1.8">
+              <div class="habit-info">
+                <div class="habit-name">Stop at 80% full</div>
+                <div class="habit-impact">+1.8 years • Mindful eating for weight maintenance</div>
+              </div>
+            </div>
+            <div class="habit-item">
+              <input type="checkbox" class="habit-checkbox" id="habit-4" data-years="3.0">
+              <div class="habit-info">
+                <div class="habit-name">Strong family bonds</div>
+                <div class="habit-impact">+3.0 years • Social connections reduce stress</div>
+              </div>
+            </div>
+            <div class="habit-item">
+              <input type="checkbox" class="habit-checkbox" id="habit-5" data-years="1.2">
+              <div class="habit-info">
+                <div class="habit-name">Daily stress relief</div>
+                <div class="habit-impact">+1.2 years • Reduces inflammation and disease risk</div>
+              </div>
+            </div>
+            <div class="habit-item">
+              <input type="checkbox" class="habit-checkbox" id="habit-6" data-years="1.5">
+              <div class="habit-info">
+                <div class="habit-name">7-9 hours quality sleep</div>
+                <div class="habit-impact">+1.5 years • Improves cellular repair and metabolism</div>
+              </div>
+            </div>
+            <div class="habit-item">
+              <input type="checkbox" class="habit-checkbox" id="habit-7" data-years="2.2">
+              <div class="habit-info">
+                <div class="habit-name">Find your purpose (Ikigai)</div>
+                <div class="habit-impact">+2.2 years • Purpose lowers mortality risk by 20%</div>
+              </div>
+            </div>
+            <div class="habit-item">
+              <input type="checkbox" class="habit-checkbox" id="habit-8" data-years="1.7">
+              <div class="habit-info">
+                <div class="habit-name">Plant-based meals</div>
+                <div class="habit-impact">+1.7 years • Reduces chronic disease risk</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="calculate-button" id="calculateBtn">Calculate My Longevity</button>
+        
+        <div class="results" id="resultsSection">
+          <h3 class="results-title">Your Longevity Potential</h3>
+          <div class="years-gained" id="yearsGained">0 years</div>
+          <p class="results-description">Based on your selected habits, you could potentially add this much time to your life!</p>
+          <div class="years-breakdown" id="yearsBreakdown">
+            <p>Select habits to see breakdown</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="calculator-footer">
+        <p>Based on research from Blue Zones and longevity studies. Results are estimates.</p>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>
